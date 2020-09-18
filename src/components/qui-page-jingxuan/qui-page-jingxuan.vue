@@ -124,7 +124,7 @@ export default {
 	},
 
 created(){
-    this.createdAtBegin=this.afterDate(this.interval);
+    // this.createdAtBegin=this.afterDate(this.interval);
     this.createdAtEnd=this.nowDate();
 		// #ifndef MP-WEIXIN
 		this.isWeixin = appCommonH.isWeixin().isWeixin; // 这是微信网页

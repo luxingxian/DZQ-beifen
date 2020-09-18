@@ -76,12 +76,16 @@
 					if(this.row >=currentRow){
 						console.log("行数超过剩余canvas高度")
 						this.canvasH = this.canvasH + (uni.upx2px(40) * (this.row - currentRow+4))
+					}else {
+						this.canvasH=430;
 					}
 				 }else{
 					currentRow=Math.ceil(this.canvasH/uni.upx2px(40))
 				// 图片不存在下（文字大于整体高度的行，改变canvas高度）
 					 if(this.row >= currentRow){
                           this.canvasH = this.canvasH + (uni.upx2px(40) * (this.row -currentRow+1))
+					}else {
+						this.canvasH=430;
 					}
 				   }
 			   console.log( this.canvasH)
